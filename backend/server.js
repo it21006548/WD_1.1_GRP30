@@ -3,6 +3,7 @@ const express = require("express");
 const app = express()
 
 //Routes
+app.use(express.json());
 app.get("/", (req,res) => {
     res.send("Home Page");
 });
